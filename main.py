@@ -1,5 +1,8 @@
 def main():
     x = int(input("Enter your decimal number: "))
+    if x < 0:
+        print("Enter a positive interger!")
+        main()
     binary = ""
     while x > 0:
         binary = str(x % 2) + binary
